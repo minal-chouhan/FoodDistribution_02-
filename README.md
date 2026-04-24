@@ -22,7 +22,7 @@ bash start.sh
 Double-click start.bat
 ```
 
-Then open your browser → **http://localhost:8000**
+
 
 That's it. One command. No npm needed.
 
