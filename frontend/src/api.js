@@ -8,5 +8,6 @@ export const foodAPI = {
   accept:  (id, ngo)    => API.patch(`/food/${id}/accept`, { ngo_name: ngo }),
   delete:  (id)          => API.delete(`/food/${id}`),
   stats:   ()            => API.get('/stats'),
-  predict: (day)         => API.get(`/predict/${day}`),
+  predict: (day, params = {}) => API.get(`/predict/${day}`, { params }),
+  donorStats: (donorName) => API.get(`/donor/${donorName}/stats`),
 }

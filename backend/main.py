@@ -63,10 +63,12 @@ def get_food(zone: Optional[str]=None, food_type: Optional[str]=None,
     if status:       result = [f for f in result if f["status"] == status]
     return {"listings": result, "count": len(result)}
 
-
-@app.get("/")
-def home():
-    return {"message": "Hello World"}
+@app.get("/api/food/{food_id}")
+def get_food_detail(food_id: str):
+    item = next((f for f in food_db if f["id"] == food_id), None)
+    if not item:
+        raise HTTPException(status_code=404, detail="Food listing not found")
+    return item
 
 @app.post("/api/add-food", status_code=201)
 def add_food(listing: FoodListing):
