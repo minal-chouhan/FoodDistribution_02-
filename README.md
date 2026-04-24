@@ -45,7 +45,7 @@ cd frontend
 npm install
 npm run dev
 ```
-Open → **http://localhost:5173**
+
 
 ---
 
@@ -60,7 +60,7 @@ Open → **http://localhost:5173**
 | GET | `/api/stats` | Dashboard statistics |
 | GET | `/api/predict/{day}` | AI demand forecast |
 
-Interactive docs → **http://localhost:8000/docs**
+
 
 ---
 
