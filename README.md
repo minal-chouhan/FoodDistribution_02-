@@ -10,22 +10,6 @@ At the same time, the platform provides **data-driven insights to donors** to he
 ---
 
 
-## ▶️ Run in 30 seconds
-
-### Mac / Linux
-```bash
-bash start.sh
-```
-
-### Windows
-```
-Double-click start.bat
-```
-
-
-
-That's it. One command. No npm needed.
-
 ---
 
 ## If you want to develop (edit code)
